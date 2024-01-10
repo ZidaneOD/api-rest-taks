@@ -33,11 +33,12 @@ CREATE TABLE tb_tasks(
 	id_icono INTEGER REFERENCES tb_iconos(id_icono),
 	id_usua INTEGER REFERENCES tb_usuarios(id_usua)
 );
-SELECT * FROM tb_usuarios;
+
 INSERT INTO tb_estados(nomb_estado) VALUES('PLANIFICACIÓN');
 INSERT INTO tb_iconos(nomb_icono)VALUES('CARPETA');
-INSERT INTO tb_usuarios(nomb_usua,appe_usua,nomb_emp_usua,carg_emp_usua,telf_usua,mail_usua,pass_usua) VALUES('adasda','sdaz','BigDavi','Soporte','+51946245333','zidane@gmail.com','123');
+INSERT INTO tb_usuarios(nomb_usua,appe_usua,nomb_emp_usua,carg_emp_usua,telf_usua,mail_usua,pass_usua) VALUES('Zinedine','Ortiz Diaz','BigDavi','Soporte','+51946245333','zidane@gmail.com','123');
 INSERT INTO tb_tasks VALUES('ATA-1','Proyecto de App','Desarrollado en Java 17 - Spring boot',1,'2024-01-09','2024-01-10', false,1,1);
-
-
-
+SELECT * FROM tb_usuarios;
+SELECT * FROM tb_iconos;
+SELECT * FROM tb_estados;
+SELECT * FROM tb_tasks;
